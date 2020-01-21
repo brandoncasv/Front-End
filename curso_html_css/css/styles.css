@@ -1,20 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700i&display=swap');
 
+/* Variable */
+:root {
+    --green-color: #7acc2d;
+    --white-color: white;
+    --black-color: #313337;
+/* padding */
+    --space: 10px;
+/* padding */
+
+/* typography */
+    --normal: 12px;
+/* Box shadow */
+    --box: 0 0 1px #c1bcbc;
+}
+/* Variable */
 
 /* Without margin and padding */
 html body {
     padding: 0;
     margin: 0;
-    font-size: 12px;
-    font-family: Helvetica;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* NavBar Section */
 nav {
     display: flex;
     width: 100%;
-    background: #7ACC2D;
-    padding: 10px;
-    color: white;
+    background: var(--green-color);
+    padding: var(--space);
+    color: var(--white-color);
     justify-content: space-between;
     align-items: center;
 }
@@ -28,13 +44,13 @@ nav ul li {
 }
 
 nav li a {
-    color: gray;
+    color: var(--black-color);
     text-decoration: none;
     
 }
 
 nav li a:hover {
-    color: white;
+    color:var(--white-color);
 }
 
 /* Main Section */
@@ -55,14 +71,14 @@ nav li a:hover {
 }
 
 .product {
-    padding: 10px;
+    padding: var(--space);
     margin-top: -200px;
 }
 
 .product .content {
-    background-color: white;
+    background-color: var(--white-color);
     padding: 15px;
-    box-shadow: 0 0 1px #c1bcbc;
+    box-shadow: var(--box);
 }
 
 .image_content {
@@ -70,11 +86,11 @@ nav li a:hover {
 }
 
 .main_button {
-    background-color: #7ACC2d;
+    background-color: var(--green-color);;
     width: 100%;
-    padding: 10px;
-    font-size: 12px;
-    color: white;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);
     border: none;
 }
 .main_button:hover {
