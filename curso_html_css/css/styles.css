@@ -4,7 +4,7 @@
 :root {
     --green-color: #7acc2d;
     --white-color: white;
-    --black-color: #313337;
+    --black-color: #424344;
 /* padding */
     --space: 10px;
 /* padding */
@@ -27,9 +27,8 @@ html body {
 /* NavBar Section */
 nav {
     display: flex;
-    width: 100%;
     background: var(--green-color);
-    padding: var(--space);
+    padding: 10px;
     color: var(--white-color);
     justify-content: space-between;
     align-items: center;
